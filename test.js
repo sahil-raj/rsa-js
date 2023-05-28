@@ -1,4 +1,4 @@
 const rsa = require("./index");
 
-let a =rsa({plainText: 3, primeRange: {upper: 9, lower: 99}});
+let a =rsa({plainText: 2, primeRange: {lower: 99, upper: 599}});
 console.log(a);
