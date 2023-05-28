@@ -1,9 +1,3 @@
-const primeRange = {
-    lower: 99,
-    upper: 999
-};
-
-
 function coPrime(x,y) {
     let r = true, i = 1;
 
@@ -65,8 +59,8 @@ let main = (data) => {
     let p,q;
 
     while(p == q) {
-        p = primeNumb(primeRange.lower, primeRange.upper)[randInt(0, primeNumb(primeRange.lower, primeRange.upper).length-1)];
-        q = primeNumb(primeRange.lower, primeRange.upper)[randInt(0, primeNumb(primeRange.lower, primeRange.upper).length-1)];
+        p = primeNumb(data.primeRange.lower, data.primeRange.upper)[randInt(0, primeNumb(data.primeRange.lower, data.primeRange.upper).length-1)];
+        q = primeNumb(data.primeRange.lower, data.primeRange.upper)[randInt(0, primeNumb(data.primeRange.lower, data.primeRange.upper).length-1)];
     }
 
     let n = p*q;
