@@ -24,8 +24,7 @@ function primeNumb(x,y) {
     let primeCheck = (a) => {
         let r = true;
         for (let i = 2;i<=(a/2);++i) {
-            if (a%i == 0)
-                r = false;
+            r = (a%i == 0) ? r=false : r=true;
         }
         return r;
     }
